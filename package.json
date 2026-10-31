@@ -1,0 +1,23 @@
+{
+  "name": "mystic-hand-magic",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare-assets": "node scripts/prepare-assets.mjs",
+    "dev": "node scripts/prepare-assets.mjs && vite --host",
+    "build": "node scripts/prepare-assets.mjs && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.21",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "@vitejs/plugin-basic-ssl": "^1.2.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
